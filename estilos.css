@@ -13,7 +13,7 @@ html{
 }
 
 header{
-    height: 60px;
+    height: 80px;
     width: 100%;
     background-color: blueviolet;
     font-size: 20px;
@@ -50,39 +50,26 @@ header{
     }
 
     main{
-        height: calc(100vh - 60px);
-        width: 100%;
-        background-image: url(img.chucu.izq.png);
-        background-size: cover;
-        background-position:center; 
+      height: calc(100vh - 60px);
+      width: 100%;
     }
 
-    .call{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: blueviolet;
-        float: right;
-        padding: 10px;
-        border: 2px blueviolet solid;
-        margin: 10px;
-        width: 35%;
+    .carousel{
+      width: 100%;
     }
-
-    .call p{
-        font-size: 20px;
+  
+    .carousel-inner img{
+      height: 700px;
+      width: 100%;
+     
+      
     }
-
-    .call a{
-        background-color: blueviolet;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 10px ;
-        padding: 7px 10px;
-     }
-
-     .call a:hover{
-        background-color: black;
-        border: 2px solid blueviolet;
-     }
+    .item{
+      height: 200px;
+      width: auto;
+      background-position: center;
+      background-size: cover;
+    }
 
      h2{
         background-color: blueviolet;
@@ -93,17 +80,40 @@ header{
         padding: 20px;
      }
 
-     .sec{
-        height: 800px;
-        width: 100%;
-     }
+   .call{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: blueviolet;
+      float: right;
+      padding: 10px;
+      border: 2px blueviolet solid;
+      margin: 10px;
+      width: 35%
+    }
 
+  .call p{
+      font-size: 20px;
+  }
+
+   .call a{
+      background-color: blueviolet;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px ;
+      padding: 7px 10px;
+      
+   }
+
+     .sec{
+        height: 700px;
+        width: 100%;
+
+     }
+    
      #sec4 strong{
         
         border: solid black;
         display: block;
      }
-
 
      footer{
         background-color: blueviolet;
