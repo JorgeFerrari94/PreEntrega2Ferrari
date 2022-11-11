@@ -19,7 +19,6 @@ header{
     font-size: 20px;
     font-family: 'Lora', serif;
     text-transform: capitalize;
-    padding: 15px;
      }
 
      .logo{
@@ -50,26 +49,31 @@ header{
     }
 
     main{
-      height: calc(100vh - 60px);
+      height: 700px;
       width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     .carousel{
-      width: 100%;
-    }
-  
-    .carousel-inner img{
       height: 700px;
       width: 100%;
+    }
+
+      .carousel-item{
+         height: 700px;
+         width: 100%;
+         background-position: center;
+         background-size: cover;
+      }
+
      
-      
-    }
-    .item{
-      height: 200px;
-      width: auto;
-      background-position: center;
-      background-size: cover;
-    }
+      .carousel-item img{
+         height: 700px;
+         width: 100%;
+         background-position: center;
+         background-size: cover;
+      }
 
      h2{
         background-color: blueviolet;
@@ -80,6 +84,16 @@ header{
         padding: 20px;
      }
 
+     h3{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: blueviolet;
+      text-transform: capitalize;
+      text-align: center;
+      padding: 20px;
+      font-size: 35px;
+
+     }
+
    .call{
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       color: blueviolet;
@@ -87,7 +101,8 @@ header{
       padding: 10px;
       border: 2px blueviolet solid;
       margin: 10px;
-      width: 35%
+      width: 35%;
+      padding: 15px;
     }
 
   .call p{
@@ -103,12 +118,76 @@ header{
       
    }
 
-     .sec{
-        height: 700px;
-        width: 100%;
+   .sec{
+      height: 700px;
+      width: 100%;
+    }
+  
 
-     }
-    
+   .productos{
+      background-color: #fff;
+      height: auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(7, 400px);
+      grid-gap: 10px;
+      padding: 10px;
+    }
+
+    .prod{
+      width: 100%;
+      border: 2px solid blueviolet;
+    }
+
+    .prod:hover{
+      transform: scale(1.05);
+      transition: all 1.5s;
+    }
+
+    .prod1{
+      background-image: url(Multi/basicaypantalon.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .prod2{
+      background-image: url(Multi/buzonegro.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .prod3{
+      background-image: url(Multi/engomado.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .prod4{
+      background-image: url(Multi/basicas.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .prod5{
+      background-image: url(Multi/vestidos.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .prod6{
+      background-image: url(Multi/perchazoom.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .prod7{
+      background-image: url(Multi/remecactus.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+
+
      #sec4 strong{
         
         border: solid black;
@@ -149,3 +228,60 @@ header{
         line-height: 35px;
         box-shadow: 0 0 10px 2px black;
      }
+
+     @media only screen and (min-width:480px){
+
+      .carousel-item img{
+         height: auto;
+         width: 100%;
+      }
+     
+      .productos{
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: repeat(4, 400px);
+         background-position: center;
+         background-size: cover;
+      }
+   
+      }
+
+      @media only screen and (min-width:768px){
+
+         .carousel-item img{
+            height: auto;
+            width: 100%;
+         }
+
+      }
+   
+   
+      @media only screen and (min-width:1024px){
+         .carousel-item img{
+            height: 700px;
+            background-position: center;
+            background-size: cover;
+           
+            }
+   
+         .productos{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 500px);
+            width: 100%;
+            background-position: center;
+            background-size: contain;
+         }
+
+         .prod1{
+            grid-column: 1/3;
+            grid-row: 1/2;
+         }
+
+         .prod5{
+            grid-column: 3/4;
+            grid-row: 2/4;
+         }
+   
+   
+        }
+ 
+
