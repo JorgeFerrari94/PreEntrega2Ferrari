@@ -51,8 +51,8 @@ header{
     main{
       height: 700px;
       width: 100%;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
 
     .carousel{
@@ -93,30 +93,6 @@ header{
       font-size: 35px;
 
      }
-
-   .call{
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      color: blueviolet;
-      float: right;
-      padding: 10px;
-      border: 2px blueviolet solid;
-      margin: 10px;
-      width: 35%;
-      padding: 15px;
-    }
-
-  .call p{
-      font-size: 20px;
-  }
-
-   .call a{
-      background-color: blueviolet;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 10px ;
-      padding: 7px 10px;
-      
-   }
 
    .sec{
       height: 700px;
@@ -187,12 +163,45 @@ header{
       background-size: cover;
     }
 
+    .nleft{
+      background-image: url(multi/img.chucu.png);
+      background-position: center;
+      background-size: cover;
+      height: 600px;
+      margin-top: 100px;
+      
 
-     #sec4 strong{
-        
-        border: solid black;
-        display: block;
+    }
+
+    .nrigth{
+      padding: 15px;
+
+
+    }
+
+    .nrigth p{
+      text-align: justify;
+      font-size: 25px;
+      padding: 15px;
+
+    }
+
+
+     .transition{
+      height: 30px;
+      width: auto;
+      text-align: left;
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      border: 2px solid blueviolet;
+      transition: height 1.5s;
      }
+
+     .transition:hover{
+
+      height: 200px;
+
+      }
 
      footer{
         background-color: blueviolet;
@@ -229,11 +238,79 @@ header{
         box-shadow: 0 0 10px 2px black;
      }
 
-     @media only screen and (min-width:480px){
+     @media only screen and (min-width:320px){
+
+      .logo{
+         text-align: center;
+      }
+
+      header{
+         height: 200px;
+         width: 100%;
+      }
+
+
+      .barra{
+         float: left;
+      }
+
+      .barra ul li{
+         text-align: left;
+     }
+
+     .carousel{
+      height: 700px;
+      width: 100%
+      
+      }
+ 
 
       .carousel-item img{
-         height: auto;
+         height: 700px;
          width: 100%;
+      }
+
+      .nleft{
+         height: 200px;
+      }
+      #sec3 {
+         margin-top: 240px;
+
+      }
+
+     }
+
+     @media only screen and (min-width:480px){
+
+      .logo{
+         text-align: center;
+      }
+
+      header{
+         height: 100px;
+         width: 100%;
+      }
+
+
+      .barra{
+         float: left;
+      }
+
+      .barra ul li{
+         margin-bottom: 5px;
+     }
+
+     .carousel{
+      height: 700px;
+      width: 100%
+      
+      }
+ 
+
+      .carousel-item img{
+         height: 98%;
+         width: 100%;
+       
       }
      
       .productos{
@@ -242,22 +319,67 @@ header{
          background-position: center;
          background-size: cover;
       }
-   
+
+      .nleft{
+         height: 300px;
+         background-position: center;
+         background-size: cover;
       }
 
-      @media only screen and (min-width:768px){
+      #sec3 {
+         margin-top: 120px;
+
+      }
+      }
+
+      @media only screen and (min-width:768px) and (max-width:996px){
+
+
+         .carousel{
+            height: 700px;
+            width: 100%;
+            
+           }
 
          .carousel-item img{
-            height: auto;
+            height: 90%;
             width: 100%;
          }
 
+         .nleft{
+            padding: 10px;
+            height: 400px;
+            background-position: center;
+            background-size: cover;
+         }
+
+         .nrigth{
+            margin-bottom: 30px;
+         }
+
+         #sec3 {
+            margin: 0%;
+            margin-top: 110px;
+            
+   
+         }
+
+   
+
       }
    
    
-      @media only screen and (min-width:1024px){
+      @media only screen and (min-width:996px) and (max-width:1024px){
+
+         .barra{
+            float: right;
+            margin-top: 15px;
+            padding-right: 10px;
+         }
+
          .carousel-item img{
-            height: 700px;
+            height: 100%;
+            width: 100%;
             background-position: center;
             background-size: cover;
            
@@ -280,8 +402,41 @@ header{
             grid-column: 3/4;
             grid-row: 2/4;
          }
+
+         .nleft{
+            height: 500px;
+            margin-top: 100px;
+         }
+
+         #sec3 {
+            margin: 0%;
+            margin-bottom: 10px;
    
-   
+         }
+
         }
- 
+
+        @media only screen and (min-width:1024px){
+
+         .barra{
+            float: right;
+            margin-top: 15px;
+            padding-right: 10px;
+         }
+
+         .nleft{
+            height: 600px;
+            margin-top: 100px;
+         }
+
+         #sec3 {
+            margin: 0%;
+            margin-bottom: 10px;
+   
+         }
+
+        }
+
+
+
 
